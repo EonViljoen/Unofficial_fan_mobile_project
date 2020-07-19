@@ -27,7 +27,10 @@ def species_id():
 
     result = si.return_item_with_id(id)
 
-    return jsonify(result)
+    name = result['name']
+    image_path = result['image']
+
+    return ('<h1>'+name+'</h1><br><br><img src=./'+image_path+'>')
 
 # Run it
 app.run()

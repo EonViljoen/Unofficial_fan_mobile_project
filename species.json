@@ -3,14 +3,14 @@
         {
             "id" : 0,
             "name" : "lizard",
-            "image" : "/pics/sUjDunw.png"},
+            "image" : "pics/sUjDunw.png"},
         {
             "id" : 1,
             "name" : "mega-lizard",
-            "image" : "/pics/OKRRPPV.png"},
+            "image" : "pics/OKRRPPV.png"},
         {
             "id" : 2,
             "name" : "dino",
-            "image" : "/pics/Batq0yH.png"}
+            "image" : "pics/Batq0yH.png"}
     ]
 }
