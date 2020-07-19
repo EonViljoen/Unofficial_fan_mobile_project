@@ -16,7 +16,6 @@ def return_item_with_id(id):
             return (item)
 
 
-
 # print(species['list'][0]['name'])
 
 # Return list of ids
@@ -25,5 +24,8 @@ def get_species_id_list():
 
     for thing in species['list']:
         id_results.append(thing['id'])
+        return (id_results)
 
-    return (id_results)
+def return_full_list():
+    return species['list']
+

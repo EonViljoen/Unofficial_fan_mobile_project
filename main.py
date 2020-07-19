@@ -1,11 +1,33 @@
 import flask
+from flask import jsonify, request
+import species_interface as si
 
+
+# Config flask API
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
-
+# API routes
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1>Distant Reading Archive</h1><p>This site is a prototype API for distant reading of science fiction novels.</p>"
+    return "<h1>Defualt homepage</h1>"
 
+@app.route('/api/species/all', methods=['GET'])
+def species_all():
+    species_list = si.return_full_list()
+
+    return (jsonify(species_list))
+
+@app.route('/api/species', methods=['GET'])
+def species_id():
+    if 'id' in request.args:
+        id = int(request.args['id'])
+    else:
+        return "Error: No id field provided. Please specify an id."
+
+    result = si.return_item_with_id(id)
+
+    return jsonify(result)
+
+# Run it
 app.run()
