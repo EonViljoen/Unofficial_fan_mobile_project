@@ -1,0 +1,16 @@
+{
+    "list" : [
+        {
+            "id" : 0,
+            "name" : "lizard",
+            "image" : "/pics/sUjDunw.png"},
+        {
+            "id" : 1,
+            "name" : "mega-lizard",
+            "image" : "/pics/OKRRPPV.png"},
+        {
+            "id" : 2,
+            "name" : "dino",
+            "image" : "/pics/Batq0yH.png"}
+    ]
+}
